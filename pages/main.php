@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <?php
-    require '../models/products.php';
+    require './models/products.php';
     $products = $database->ProductList();
 
     $title = 'Online Shop';
-    require './head.php';
+    require './pages/head.php';
     ?>
 
-    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
 <section class="container">
-    <?php require './header.php';?>
+    <?php require './pages/header.php';?>
 
 
     <header class="header">
@@ -27,7 +27,7 @@
         <section class="card-container">
 
             <div class="image-container">
-                <img src="../assets/images/cards/daniel-korpai-2FGPidtk00E-unsplash.jpg" alt="image" class="image">
+                <img src="./assets/images/cards/daniel-korpai-2FGPidtk00E-unsplash.jpg" alt="image" class="image">
             </div>
 
             <div class="title-box">
@@ -62,7 +62,7 @@
 
     </main>
 
-    <?php require './footer.php';?>
+    <?php require './pages/footer.php';?>
 </section>
 </body>
 </html>
