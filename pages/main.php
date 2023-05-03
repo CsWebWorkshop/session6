@@ -31,7 +31,7 @@
             </div>
 
             <div class="title-box">
-                <h2 class="card-title"><a href="../assets/pages/details.html"><?php echo $product['title'];?></a></h2>
+                <h2 class="card-title"><a href="/products/<?php echo $product['id'];?>"><?php echo $product['title'];?></a></h2>
                 <div class="rate-box">
                     <i class="fi fi-sr-star star"></i>
                     <h3 class="rate"><?php echo $product['rating'];?></h3>

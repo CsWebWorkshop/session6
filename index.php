@@ -7,7 +7,6 @@ if($request == '' || $request == '/') {
 }
 elseif (preg_match('/^\/products(\/)/', $request)) {
     $request = str_replace('/products', '', $request);
-
     $part = explode('/', $request);
     $productID = $part[1];
     if (preg_match('/^\/[0-9]+$/', $request)) {
